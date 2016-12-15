@@ -90,35 +90,35 @@ Add remote repository
 
 
 # My work Flow
-	Git checkout master
-	Git fetch
-	Git merge origin/master
-	Git checkout –b newBranchName
-	Git commit –m “ “
-	Git fetch
-	Git push –u origin barnchName
+-	Git checkout master
+-	Git fetch
+-	Git merge origin/master
+-	Git checkout –b newBranchName
+-	Git commit –m “ “
+-	Git fetch
+-	Git push –u origin barnchName
 
 # Collaborator view
-	Git checkout master
-	Git fetch
-	Git merge origin/master
-	Git checkout –b branchName origin/branchName
-	Git log
-	Git show 84521d
-	Git commit –am “”
-	Git fetch
-	Git push
+-	Git checkout master
+-	Git fetch
+-	Git merge origin/master
+-	Git checkout –b branchName origin/branchName
+-	Git log
+-	Git show 84521d
+-	Git commit –am “”
+-	Git fetch
+-	Git push
 
  
 # Again my work
-	Git fetch
-	Git log –p branchName..origin/branchName
-	Git merge origin/branchName
-	Git checkout master
-	Git fetch
-	Git merge origin/master
-	Git merge branchName
-	Git push
+-	Git fetch
+-	Git log –p branchName..origin/branchName
+-	Git merge origin/branchName
+-	Git checkout master
+-	Git fetch
+-	Git merge origin/master
+-	Git merge branchName
+-	Git push
 
 
 
