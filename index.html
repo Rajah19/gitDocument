@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Gitdocument by Rajah19</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Gitdocument</h1>
+        <h2>git notes</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Rajah19/gitDocument/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/Rajah19/gitDocument/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/Rajah19/gitDocument" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="git-notes" class="anchor" href="#git-notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git notes.</h1>
+
+<h1>
+<a id="global-configuration" class="anchor" href="#global-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Global configuration.</h1>
+
+<ul>
+<li>  Git config --global user.name “Your name”</li>
+<li><p>Git config –global user.email your email</p></li>
+<li><p>Initialize =&gt; git init , git clone</p></li>
+<li><p>To add files             =&gt; git add .    or   git add  or  git add directory/</p></li>
+<li>  To commit              =&gt; git commit –m “”</li>
+<li>  To add and commit  =&gt; git commit –am “”</li>
+<li>  To delete file            =&gt;   git rm </li>
+<li>  To get status             =&gt;   git status</li>
+</ul>
+
+<h1>
+<a id="git-log" class="anchor" href="#git-log" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git log</h1>
+
+<ul>
+<li>  Git help log</li>
+<li>  View all                    =&gt; git log,</li>
+<li>  View number of log  =&gt; git log -n 1</li>
+<li>  View since                =&gt; git log - -since= 2014-05-15</li>
+<li>  View until                 =&gt; git log - -until= 2005-05-25</li>
+<li>   View by author        =&gt; git log - - author=””</li>
+<li>   Grep by word           =&gt; git log - -grep=”hi”</li>
+<li>    Get online info        =&gt; git log - -oneline</li>
+<li>   Git show log</li>
+</ul>
+
+<h1>
+<a id="to-rename-file" class="anchor" href="#to-rename-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To rename file</h1>
+
+<ul>
+<li>  git mv oldFilename  newFilename<br>
+</li>
+<li>   git mv oldFilename    directory/newFileName</li>
+</ul>
+
+<h1>
+<a id="different-from-file-and-branches" class="anchor" href="#different-from-file-and-branches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Different from file and branches</h1>
+
+<ul>
+<li>  To get all: Git diff</li>
+<li>  Base on file: git diff - - base 
+                    ** git diff - -color -words </li>
+<li>  Preview changes, before merging: git diff  
+                  **Git diff –color-words .. </li>
+<li>   Find different form stage   :              git diff - - staged </li>
+<li>  Press q to exit from different. </li>
+<li>
+<p>Use F and B for forward and backward.</p>
+
+<h1>
+<a id="changes" class="anchor" href="#changes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changes</h1>
+</li>
+<li>  Undo changes in file :  *Git checkout - -  </li>
+<li>  Undo stage                : git reset HEAD </li>
+<li>  Amend commit         : git commit - - amend –m “get the previous commit”</li>
+<li>  Revert old one           : git checkout 20ea6a53a4f2 - - filename</li>
+<li>  Revert commit           : git revert sha</li>
+</ul>
+
+<h1>
+<a id="branch" class="anchor" href="#branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Branch</h1>
+
+<ul>
+<li>  Create branch: git branch nameOfbranch</li>
+<li>  View Branch:  git branch or git branch –a or git branch –r</li>
+<li>  Switch Branch:  git checkout branchName</li>
+<li>  Delete branch : git branch –d branchName</li>
+</ul>
+
+<h1>
+<a id="merge" class="anchor" href="#merge" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Merge</h1>
+
+<p>To merge branch, you must go main branch, and </p>
+
+<ul>
+<li>  Git merge branchName</li>
+<li>  Git branch - -merged</li>
+<li>  Git branch - - no-merge</li>
+</ul>
+
+<h1>
+<a id="remote" class="anchor" href="#remote" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Remote</h1>
+
+<p>Add remote repository
+   git remote add origin <a href="https://github.com/rajah10/sqlAndMySql.git">https://github.com/rajah10/sqlAndMySql.git</a></p>
+
+<h1>
+<a id="create-a-remote-branch" class="anchor" href="#create-a-remote-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a remote branch</h1>
+
+<ul>
+<li>  git remote –u repositoryName localBranch</li>
+<li>  git branch –a </li>
+<li>  git branch –r =&gt; only show remote branch</li>
+<li>  git push remoteBanchName</li>
+<li>  git fetch nameOfTheRepository or remoteBranchName</li>
+<li>  git merge origin/BranchName</li>
+</ul>
+
+<h1>
+<a id="to-delete-remote-branch" class="anchor" href="#to-delete-remote-branch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To delete remote branch</h1>
+
+<ul>
+<li>  git push origin : branchName</li>
+</ul>
+
+<h1>
+<a id="clone-repository-to-local-machine" class="anchor" href="#clone-repository-to-local-machine" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Clone repository to local machine</h1>
+
+<ul>
+<li>  Git clone path</li>
+<li>  git remote</li>
+<li>  git remote –v  (view repository )</li>
+<li>  git remote rm repositoryName  ( remove repository )</li>
+</ul>
+
+<h1>
+<a id="my-work-flow" class="anchor" href="#my-work-flow" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My work Flow</h1>
+
+<ul>
+<li>  Git checkout master</li>
+<li>  Git fetch</li>
+<li>  Git merge origin/master</li>
+<li>  Git checkout –b newBranchName</li>
+<li>  Git commit –m “ “</li>
+<li>  Git fetch</li>
+<li>  Git push –u origin barnchName</li>
+</ul>
+
+<h1>
+<a id="collaborator-view" class="anchor" href="#collaborator-view" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collaborator view</h1>
+
+<ul>
+<li>  Git checkout master</li>
+<li>  Git fetch</li>
+<li>  Git merge origin/master</li>
+<li>  Git checkout –b branchName origin/branchName</li>
+<li>  Git log</li>
+<li>  Git show 84521d</li>
+<li>  Git commit –am “”</li>
+<li>  Git fetch</li>
+<li>  Git push</li>
+</ul>
+
+<h1>
+<a id="again-my-work" class="anchor" href="#again-my-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Again my work</h1>
+
+<ul>
+<li>  Git fetch</li>
+<li>  Git log –p branchName..origin/branchName</li>
+<li>  Git merge origin/branchName</li>
+<li>  Git checkout master</li>
+<li>  Git fetch</li>
+<li>  Git merge origin/master</li>
+<li>  Git merge branchName</li>
+<li>  Git push</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
