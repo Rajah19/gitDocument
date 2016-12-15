@@ -1,5 +1,7 @@
 # Git notes.
 
+Read in a web page, click this https://rajah19.github.io/gitDocument/
+
 #  Global configuration.
 -	Git config --global user.name “Your name”
 -	Git config –global user.email your email
